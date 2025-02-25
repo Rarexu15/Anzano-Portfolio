@@ -1,73 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>PORTFOLIO</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ralex Anzano - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="mobile.css">
-    <link href="https://fonts.googleapis.com/css?family=Bubblegum Sans" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="burger.css">
+    <link rel="stylesheet" href="screen22.css">
+    <link rel="stylesheet" href="screen2.css">
+    <link rel="stylesheet" href="containers2.css">
+    <script src="script.js" defer></script>
+</head>
 <body>
+    <header class="header">
+        <div class="site-title-container">
+            <img class="logo" src="assets/smolbun.png" alt="Site Logo">
+            <a href="#home" class="site-title">R A L E X</a>
+        </div>
+        <button class="burger-menu" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="menu">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#project">Project</a>
+            <a href="#art">Artworks</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+    </header>
 
-<div class="header">
-    <div class="site-title-container">
-        <img class="logo" src="assets/smolbun.png" alt="Site Logo">
-        <p class="site-title">  R A L E X </p>
-    </div>
-    <div class="menu">
-        <a href="#header">Home</a>
-        <a href="#about">About Me</a>
-        <a href="#project">Project</a>
-        <a href="#art">Artworks</a>
-        <a href="#contact">Contact Me</a>
-    </div>
-</div>
-
-<!-- HERO -->
-<div class="hero-container" id="header">
-    <div class="hero-left">
+    <div class="section">
+ <!--lahat ng <section> relates sa single theme -->
+    <section id="home" class="home-container">
+        <div class="hero-container">
+            <div class="hero-left">
+                <img class="lex" src="assets/RALEXXX.png" alt="Profile Picture">
+            </div>
+            <div class="hero-right">
+                <h1 class="hero-heading">Hey there, <br> I'm Ralex Anzano!</h1>
+                <p class="hero-sub-heading">3rd Year IT student and a Freelance Artist</p>
     
-        <img class="pfp" src="assets/HOMEimg.png" alt="Profile">
-        <img class="small-logo" src="assets/hand.png" alt="Profile">
-    </div>
-
-    <div class="hero-right">
-        <h1 class="hero-heading">Hey there, <br> I'm Ralex Anzano! </h1>
-        <p class="hero-sub-heading">>> 3rd Year IT student and a Freelance Artist <<</p>
-        <div  class="hero-btn-cont">
-            <button class="sheet-btn">COMMISSION</button>
-            <button class="gal-btn">GALLERY</button>
+                <div class="hero-btn-cont">
+                    <a href="#project" class="proj-btn">PROJECTS</a>
+                    <a href="#contact" class="cont-btn">CONTACT ME</a>
+                </div>
+                <p class="small-txt">Combining Programming skills with Creative artistry in digital art and design.</p>
+            </div>
         </div>
-        <p class="small-txt">Combining Programming skills with Creative artistry in digital art and design.</p>
-    </div>
-</div>
-
-
-
-<!------ABOUT------>
-<div class="about" id="about">
-<div class="overlay"></div>
-    <div class="about-me">
-        <h1> 🎨 Who's Rexu? 🎨 </h1>
-    <div class="ab-container">
-        <div class="ab-left">
-            <p>Hi! I'm Ralex L. Anzano or "Rarexu" in the Art community. I'm a 3rd-year IT student at WCC Antipolo with 
-        a passion for digital arts, animation, and technology. Ever since I 
-        was young, I’ve loved expressing my creativity through drawing.</p>
-        
+    </section>
+<!-- ABOUT CONTAINER -->
+    <section id="about" class="about-container">
+        <div class="about-me">
+            <div class="ab-top">
+                <img class="abpic" src="assets/Ralex.png" alt="About Ralex">
+                <img class="star" src="assets/star.png" alt="star">
+                <img class="star2" src="assets/star.png" alt="star">
+            </div>
+            <h1>ABOUT ME</h1>
+            <div class="ab-bottom">
+                <p>Hi! I'm Ralex L. Anzano or "Rarexu" in the Art community. I'm a 3rd-year IT student at WCC Antipolo with 
+                    a passion for digital arts, animation, and technology. Ever since I 
+                    was young, I've loved expressing my creativity through drawing.
+                </p>
+            </div>
         </div>
-        <div class="ab-right">
-            <img class="abpic" src="assets/boutme.jpg" alt="bout">
+    </section>
+<!-- PROJECT SECTION -->
+    <section id="project" class="project-container">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="assets/proj1.png" alt="Project 1">
+                <h3>SCHOOL ACTIVITY</h3>
+                <p>Cutie design for Art Commission page</p>
+            </div>
+            <div class="project-card">
+                <img src="assets/proj2.png" alt="Project 2">
+                <h3>PERSONAL/BLOG WEBSITE</h3>
+                <p>Website for personal portfolio of a family</p>
+            </div>
         </div>
+    </section>
+<!-- ART SECTION -->
+    <section id="art" class="art-container">
+        <h2>Artworks</h2>
+        <div class="art-grid">
+            <img src="assets/Pfp.jpg" alt="Artwork 1">
+            <img src="assets/rexu.jpg" alt="Artwork 2">
+            <img src="assets/boutme.jpg" alt="Artwork 3">
+            <img src="assets/homepfp.png" alt="Artwork 4">
+        </div>
+    </section>
+<!-- CONACT FORM/SECTION -->
+    <section id="contact" class="contact-container">
+        <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+    </section>
     </div>
-</div>
-</div>
-
-
-
-<!--Footer-->
-<footer>
-
-</footer>
-
+<!-- FOOTER -->
+    <footer class="footer-container">
+        <p>&copy; 2024 Ralex Anzano. All rights reserved.</p>
+        <p>anzanoralex@gmail.com</p>
+    </footer>
 </body>
 </html>

@@ -1,153 +1,181 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth;
-    scroll-padding-top: 55px;
+html {
+  scroll-behavior: smooth;
 }
+
 body {
-    overflow-y: scroll;
-  }
-/*--HEADER--*/
+  font-family: "Poppins", serif;
+}
+/* HEADER */
 .header {
-    padding: 5px 100px;
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(189, 39, 126);
-    align-items: center;
-    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, 
-    rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
-    z-index: 99999;
-    top: 0;
-    position: sticky;
-    height: 60px;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, rgba(166, 45, 133, 0.722), rgba(192, 80, 164, 0.6));
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  align-items: center;
+  box-shadow: rgba(32, 2, 34, 0.338) 0 10px 5px;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  width: 100%;
+}
 
+.site-title-container {
+  display: flex;
+  align-items: center;
+  text-shadow: #cb6d9a 0px 0 10px;
 }
-.site-title-container{
-    display: flex;
-    align-items: center;
+
+.logo {
+  height: 50px;
+  width: 50px;
 }
-.logo{
-    height: 50px;
-    width: 50px;
-}
+/* MENU */
 .site-title{
-    font-weight: bold;
-    font-size: 20px;
-    color: #fffbd5;
-    font-family: 'Bubblegum Sans';
-    text-shadow: #34031bc6 5px 0 10px;
+  text-decoration: none;
+  font-size: 30px;
 }
-.menu{
-    display: flex;
-    gap: 25px;
-    align-items: center;
-    font-size: 20px;
+.site-title,
+.menu {
+  padding: 10px;
+  font-weight: bold;
+  color: #fffcfd;
+  font-family: "Philosopher", serif;
 }
+
+.menu {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+}
+
 .menu a {
-    text-decoration: none; 
-    color: #fffbd5;
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-    font-family: 'Bubblegum Sans';
-  }
-  
-  .menu a:hover {
-    background-color: #fffbd5;
-    color: #c15487;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  
-  .menu a.active {
-    background-color: #fffbd5;
-    color: #c15487;
+  text-decoration: none;
+  color: #fefff7;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
   }
 
-/*---HERO---*/
-.hero-container{
-    top: 0;
-    padding: 50px 100px;
-    /*padding: 45px 150px;*/
-    display: flex;
-    align-items: center;
-    background-image: url("assets/HomeBg.png");
-    background-size: cover;
-    height: 530px;
-    /*flex-wrap: wrap;*/
+.menu a:hover {
+  background-color: rgba(203,109,154, 0.597);
+  color: #fffbd5;
 }
-.hero-left{
-    width: 40%;
-    /*flex-grow: 1;*/
-    position: relative;
+/* Only show background when explicitly clicked/active AND hovered */
+.menu a.active:hover {
+  background-color: rgba(203,109,154, 0.597);
+  color: #fffbd5;
 }
-.pfp{
-    height: 454px;
-    width: 340px;
-}
-/*-----Hand Wave-----*/
-.small-logo{
-    position: absolute;
-    left: -18px;
-    top: 271px;
-    height: 162px;
-    width: 160px;
-    animation: smolanim 4s linear infinite;
-    transform-origin: 70% 70%;
-}
-@keyframes smolanim {
-    0% { transform: rotate( 0.0deg) }
-   10% { transform: rotate(14.0deg) }
-   20% { transform: rotate(-8.0deg) }
-   30% { transform: rotate(14.0deg) }
-   40% { transform: rotate(-4.0deg) }
-   50% { transform: rotate(10.0deg) }
-   60% { transform: rotate( 0.0deg) }  
-  100% { transform: rotate( 0.0deg) }
 
-} 
-/*---HERO---*/
-.hero-right{
-    /*flex-grow: 1;*/
-    width: 60%;
+/* HOME CONTAINER AND HERO */
+.home-container {
+  background-image: url("assets/bgg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding-top: 20px; 
 }
-.hero-heading{
-    font-size: 72px;
-    font-family: 'Bubblegum Sans';
-    color: rgb(138, 24, 94);
-    text-shadow: #e63a8da4 5px 0 5px;
+
+.hero-container {
+  padding: 40px 80px;
+  padding-bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
-.hero-sub-heading{
-    padding: 20px 0;
-    color: rgb(216, 65, 138);
-    font-family: 'Bubblegum Sans';
-    font-size: 30px;
+
+.hero-left {
+  width: 45%;
+  padding-top: 20px;
 }
-.sheet-btn, .gal-btn{
-    padding: 20px 30px;
-    background-color: rgb(189, 39, 126);
-    color: white;
-    font-family: cursive;
-    font-weight: bold;
-    border-radius: 5%;
-    border: none;
-    box-shadow: 0px 5px 5px rgba(29, 14, 14, 0.349);
+
+.lex {
+  width: 100%; /* to Make image responsive */
+  height: auto;
+  max-width: 500px; /* Increased max-width for larger screens */
+  max-height: 580px; /* Set a max-height to maintain aspect ratio */
+  object-fit: contain; /* para makita buong image */
 }
-.hero-btn-cont{
-    display: flex;
-    align-items: center;
-    gap: 15px;
+
+.hero-right {
+  width: 55%;
 }
-.sheet-btn:hover, .gal-btn:hover {
-    background-color: #fef9ac;
-    color: rgb(208, 0, 94);
-    box-shadow: 0px 5px 5px rgba(29, 14, 14, 0.349);
-  }
-.small-txt{
-    margin-top: 20px;
-    font-size: 20px;
-    color: rgba(100, 16, 61, 0.426);
+
+.hero-heading {
+  font-size: 60px;
+  color: rgb(255, 247, 254);
+  text-shadow: #200e16e7 8px 0 5px;
 }
+
+.hero-sub-heading {
+  padding: 5px 0;
+  color: rgb(216, 65, 138);
+  font-size: 26px;
+}
+
+
+.proj-btn,
+.cont-btn {
+  padding: 15px 30px;
+  background-color: rgb(189, 39, 126);
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 5px 5px rgba(29, 14, 14, 0.349);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.proj-btn:hover,
+.cont-btn:hover {
+  background-color: #f2cbe0;
+  color: #8f477b;
+}
+
+.hero-btn-cont {
+  display: flex;
+  gap: 15px;
+}
+
+.small-txt {
+  margin-top: 20px;
+  font-size: 16px;
+  color: rgb(210, 65, 140);
+}
+
+section {
+  padding: 20px 50px;
+}
+
+h2 {
+  font-size: 36px;
+  color: rgb(255, 44, 174);
+  margin-bottom: 30px;
+}
+
+
+.footer-container {
+  background-color: #3b395d;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+

@@ -1,0 +1,49 @@
+/* LARGEST SCREEN */
+@media screen and (max-width: 1200px) {
+.hero-container {
+  max-width: 1000px;
+  padding: 40px 50px;
+}
+
+.lex {
+  max-width: 400px;
+  max-height: 520px;
+}
+}
+
+/* IPad Mini */
+@media screen and (max-width: 915px) {
+.header {
+    padding: 20px 50px;
+}
+
+.hero-container{
+  flex-direction: column;
+  text-align: center;
+  padding: 40px 30px;
+}
+
+.hero-left,
+.hero-right {
+  width: 100%;
+}
+
+.lex {
+  max-width: 350px;
+  max-height: 455px;
+}
+
+.hero-heading {
+  font-size: 60px;
+}
+
+.hero-sub-heading {
+  font-size: 30px;
+}
+.small-txt{
+  font-size: 20px;
+}
+.hero-btn-cont{
+    justify-content: center;
+}
+}
