@@ -1,3 +1,3 @@
 LIVE PREVIEW
 
-https://github.com/Rarexu15/Anzano-Portfolio
+https://rarexu15.github.io/Anzano-Portfolio/
